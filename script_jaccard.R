@@ -1,0 +1,20 @@
+#Criando função para o Índice de Similaridade de Jaccard
+#Gabriela Cota, Universidade Federal de Alagoas
+# 22 de Julho de 2021
+
+
+#Carregando banco de dados:
+i.jaccard <- read.table ("Endereço do arquivo com o banco de dados", sep="\t", header=T, stringsAsFactors=T)
+summary(i.jaccard)
+#A tentativa de função:
+jaccard <- function (y) {
+  (i.jaccard$Espécies.em.comum)/(i.jaccard$Espécies.em.comum) + (i.jaccard$Espécies.exclusivas.área.1) + (i.jaccard$Espécies.exclusivas.área.2)
+}
+#Aplicando a função:
+jaccard(1)
+jaccard(2)
+jaccard(7)
+
+#Podemos ainda modificar a função para retorno de respostas sem banco de dados:
+IJ <- function (a, b, c) { a/ (a+b+c) *100}
+IJ (10,20,30)

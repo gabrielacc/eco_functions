@@ -1,0 +1,61 @@
+#Cálculo base para Pegada Ecológica
+#Gabriela Cota, Universidade Federal de Alagoas
+# 22 de Julho de 2021
+
+#Com base na tabela de http://etnoideia.pt/ws/images/stories/docs/pegeco.pdf
+#Montando uma condição:
+
+soma <- 150
+if (soma==150) {
+  res <- "Pegada ecológica menor do que 4 hectares."
+  print(res)
+} else if (soma>150) {
+  res <- "Pegada ecológica maior do que 4 hectares."
+  print(res)
+} else {
+  res <- "Pegada ecológica menor do que 4 hectares."
+  print(res)
+}
+
+#Montando a função para obter o total de pontos de Pegada Ecológica:
+pegada.eco <- function (a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r) {
+  soma <- (a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r)
+  return(soma)
+}
+
+#Exemplo de resultados para a soma:
+pegada.eco(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+
+
+#Interpretando o resultado, 171, levando para a condicional de "soma":
+soma <- 171
+if (soma==150) {
+  res <- "Pegada ecológica menor do que 4 hectares."
+  print(res)
+} else if (soma>150) {
+  res <- "Pegada ecológica maior do que 4 hectares."
+  print(res)
+} else {
+  res <- "Pegada ecológica menor do que 4 hectares."
+  print(res)
+}
+
+
+#Tentando colocar a condição dentro da função (Não funcionou, mas fica a reflexão ksks:
+pegada.eco <- function (a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r) {
+  soma <- (a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r)
+  return(soma)
+  soma <- 200
+  if (soma==150) {
+    res <- "Pegada ecológica menor do que 4 hectares."
+    print(res)
+  } else if (soma>150) {
+    res <- "Pegada ecológica maior do que 4 hectares."
+    print(res)
+  } else {
+    res <- "Pegada ecológica menor do que 4 hectares."
+    print(res)
+  }
+}
+
+#ForaBozonario
